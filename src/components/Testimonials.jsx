@@ -3,6 +3,8 @@ import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
 
 const Testimonials = () => (
+  <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}>
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
@@ -12,8 +14,7 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to accept card payments and grow your business
-          anywhere on the planet.
+        "FeeFi's AI-driven credit scoring helped me secure affordable loans. User-friendly platform, transparent fees, and flexible repayment options. Recommended for education financing."
         </p>
       </div>
     </div>
@@ -22,6 +23,7 @@ const Testimonials = () => (
       {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
     </div>
   </section>
+  </div>
 );
 
 export default Testimonials;

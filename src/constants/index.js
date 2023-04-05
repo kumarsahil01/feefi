@@ -1,31 +1,60 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
+
+export const userf=[
+  {
+    id: "home",
+    title: "Home",
+    path: "/register"
+  },
+  {
+    id: "features",
+    title: "Resources",
+    path: "/dashboard"
+  },
+  {
+    id: "loan",
+    title: "About",
+    path: "/profile"
+  },
+  {
+    id: "clients",
+    title: "Sign in",
+    path: "/registration"
+  },
+]
 export const navLinks = [
   {
     id: "home",
     title: "Home",
+    path: "/"
   },
   {
     id: "features",
-    title: "Features",
+    title: "Resources",
+    path: "/resources"
   },
   {
-    id: "product",
-    title: "Product",
+    id: "loan",
+    title: "About",
+    path: "/about"
   },
   {
-    id: "clients",
-    title: "Clients",
-  },
+    id:"loan",
+    title:'Apply for loan',
+    path :"/loan"
+  }
+  
+  
 ];
 
 export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "On-campus support",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "FeeFi provides on-campus support to students, including seminars, workshops, and counseling sessions, to help them make informed decisions about their education financing options.",
   },
   {
     id: "feature-2",
@@ -37,9 +66,9 @@ export const features = [
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Flexible repayment options",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      " FeeFi platform offers flexible repayment options, allowing students to customize their repayment plans based on their income after graduation. This ensures that students do not face a financial burden after graduation and can repay their loans without stress.",
   },
 ];
 
@@ -47,25 +76,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "FeeFi's AI-driven credit scoring helped me secure an affordable loan for my MBA program",
+      name:"Sonia",
+      title: "Student/MBA",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "FeeFi's user-friendly platform made the loan application process smooth and stress-free",
+    name: "Abhishek",
+    title: "Student/B.Tech",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "FeeFi's transparent fee structure and competitive interest rates saved me a lot of money",
+    name: "Anirudh",
+    title: "Student/MBBS",
     img: people03,
   },
 ];

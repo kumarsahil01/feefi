@@ -1,24 +1,28 @@
 import { card } from "../assets";
 import styles, { layout } from "../style";
+import { Link } from "react-router-dom";
 import Button from "./Button";
+import EmiCalculator from "./Form";
+import MyForm from "./Form1";
 
 const CardDeal = () => (
-  <section className={layout.section}>
+  <section id="loan" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        Find a Loan <br className="sm:block hidden" /> in few easy steps.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      FeeFi's user-friendly and simple loan application process requires minimal documentation. Accessible from anywhere, with AI-driven credit assessment for quick approval and flexible repayment options to suit your needs
       </p>
 
-      <Button styles={`mt-10`} />
+      <a href="/form">
+        <Button styles={`mt-10`} />
+      </a>
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+      {/* <img src={card} alt="billing" className="w-[100%] h-[100%]" /> */}
+      <MyForm />
     </div>
   </section>
 );
