@@ -16,6 +16,14 @@ import AuthDetails from "./Auth/AuthDetails";
 import UserProfile from "./UserProfile";
 import Loanfunction from "./Loanfunction";
 import Profile from "../profile";
+import Resources from "./resources";
+import Portalmain from "../Portal/Portalmain";
+import Engineering from "./resoucescomp.jsx/engineering";
+import Interestrate from "./resoucescomp.jsx/interestrate";
+import Documentrequire from "./resoucescomp.jsx/documentrequire";
+import Compareeduloan from "./resoucescomp.jsx/compareeduloan";
+import Faq from "./Faq";
+import About from "./About";
 
 export {
   Navbar,
@@ -35,5 +43,13 @@ export {
   AuthDetails,
   UserProfile,
   Loanfunction,
-Profile
+Profile,
+Resources,
+Portalmain,
+Engineering,
+Interestrate,
+Documentrequire,
+Compareeduloan,
+Faq,
+About
 };

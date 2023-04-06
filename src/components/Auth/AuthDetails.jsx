@@ -2,6 +2,7 @@ import React ,{useEffect,useState} from 'react'
 import {auth} from '../../config'
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const AuthDetails = () => {
     const navigate=useNavigate();
     const [authuser,setauthuser]=useState(null);
@@ -22,7 +23,7 @@ const AuthDetails = () => {
     }
   return (
     <div>
-      {authuser?<><p>{`Signed In as ${authuser.email}`}</p><button  onClick={userSignOut}>Sign Out</button></>:<p>Signed Out</p>}
+      {authuser?<><p className='m-1 bg-slate-300 rounded-lg p-2'>{`Signed In as ${authuser.email}`}</p><Link to='/'><button className='border rounded-lg p-1 bg-black text-white '>Home Page...</button></Link></>:<p>Signed Out</p>}
     </div>
   )
 }

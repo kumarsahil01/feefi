@@ -15,8 +15,18 @@ import {
   Signup,
   AuthDetails,
   Loanfunction,
-  Profile
+  Profile,
+  Resources,
+  MyForm,
+  Portalmain,
+  Engineering,
+  Interestrate,
+  Documentrequire,
+  Compareeduloan,
+  Faq,
+  About
 } from "./components";
+
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 const App = () => (
   <BrowserRouter>
@@ -52,8 +62,8 @@ const App = () => (
             path="/"
             element={
               <>
-                <Navbar /> <Hero/> 
-               <Business/> <Testimonials/> <CTA/>  <Footer />
+                <Navbar /> <Hero />
+                <Business /> <Testimonials /> <CTA /> <Footer />
               </>
             }
           />
@@ -61,7 +71,7 @@ const App = () => (
             path="/resources"
             element={
               <>
-                <Navbar /> <Billing/> <Footer />
+                <Resources />
               </>
             }
           />
@@ -69,27 +79,31 @@ const App = () => (
             path="/registration"
             element={
               <>
-                 <Signup/>  
-                 <Login/>
-                 <AuthDetails/>
+                
+                <Login />
+                
               </>
             }
           />
 
-          {/* <Route
-          path="/loan"
-          element={
-            <>
-            <Loanfunction/>
-            </>
-          }
-          /> */}
-
-       <Route
-        path="/profile"
-        
-        element={<Profile/>}
-       />
+          <Route
+            path="/loan"
+            element={
+              <>
+                <MyForm />
+              </>
+            }
+          />
+         
+         <Route path="/faq" element={<Faq/>}/>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/job" element={<Portalmain />} />
+          <Route path="/engineering" element={<Engineering/>}/>
+          <Route path="/interestrate" element={<Interestrate/>}/>
+          <Route path="/emicalulator" element={<><Navbar/> <Billing/> <Footer/></>}/>
+          <Route  path="/signup" element={<Signup/>}/>
+          <Route path="/about" element={<About/>}/>
+       
         </Routes>
       </div>
     </>

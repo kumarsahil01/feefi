@@ -7,7 +7,7 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
-import { UserProfile } from "../components";
+import { Resources, UserProfile } from "../components";
 
 
 
@@ -51,6 +51,7 @@ const Navbar = () => {
           >
             Resources
           </button> */}
+          <Resources/>
           {authuser===null?<Link to='/registration'><p><button className="text-white">Login</button></p></Link>:<UserProfile />}
         </ul>
 
@@ -86,8 +87,9 @@ const Navbar = () => {
               >
                 Resources
               </button> */}
-              console.log('thsi sudgfseiulg')
-              {authuser===null?<p>this is login page</p>:<UserProfile />}
+                 <Resources/>
+            
+              {authuser===null?<Link to='/registration'><p><button className="text-white">Login</button></p></Link>:<UserProfile />}
               
             </ul>
           </div>

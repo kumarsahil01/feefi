@@ -1,6 +1,48 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 
+export const faq=[
+  {
+    qus:"What is Feefi?",
+    ans:" Feefi is a finance education company that provides zero-interest rate loans to students for pursuing their education. We also offer skill development and job opportunities to our borrowers"
+  },
+  {
+    qus:"Who is eligible for a loan from Feefi?",
+    ans:" Students aged 18-35 years, who are pursuing full-time or part-time courses, can apply for a loan from Feefi. Applicants must have a valid admission letter from a recognized educational institution in India."
+  },
+  {
+    qus:"How much loan can I get from Feefi?",
+    ans:"  Feefi offers loans ranging from INR 10,000 to INR 5,00,000 depending on the course and institution. Loan amounts are determined based on the applicant's financial needs, academic performance, and other factors."
+  },
+  {
+    qus:"How long does it take to get a loan from Feefi?",
+    ans:" The loan application process takes approximately 3-5 working days. However, it may take longer if additional information or documentation is required."
+  },
+  {
+    qus:"How can I apply for a loan from Feefi?",
+    ans:"  Applicants can apply for a loan by visiting our website and filling out the online application form. We require documents such as admission letters, academic records, and ID proofs for processing the loan application."
+  },
+  {
+    qus:"Do I need collateral or a co-signer to get a loan from Feefi?",
+    ans:"  No, Feefi provides unsecured loans, and no collateral or co-signer is required"
+  },
+  {
+    qus:"What is the interest rate on loans from Feefi?",
+    ans:"  Feefi offers zero-interest rate loans to students. However, a small amount of money will be charged for our skill development training, which will be refundable after the start of the student's part-time job."
+  },
+  {
+    qus:"How can I repay my loan to Feefi?",
+    ans:" : Feefi offers flexible repayment options. Borrowers can choose to repay their loan in EMIs or a lump sum amount. The repayment schedule will be determined based on the borrower's financial situation."
+  },
+  {
+    qus:"What happens if I am unable to repay my loan on time?",
+    ans:"In case of default, Feefi will work with the borrower to come up with a suitable repayment plan. If the borrower still fails to repay the loan, legal action may be taken to recover the outstanding amount."
+  },
+  {
+    qus:"How does Feefi help with skill development and job opportunities?",
+    ans:" Feefi offers skill development training to borrowers in various fields such as coding, content writing, social media management, and more. After training, borrowers get the opportunity to work for just 7-10 hours per week, and we evaluate their work after every six months and provide a cash prize to the top performers. We also help our borrowers to get the best job offers. "
+  }
+]
 export const userf=[
   {
     id: "home",
@@ -29,11 +71,7 @@ export const navLinks = [
     title: "Home",
     path: "/"
   },
-  {
-    id: "features",
-    title: "Resources",
-    path: "/resources"
-  },
+  
   {
     id: "loan",
     title: "About",
